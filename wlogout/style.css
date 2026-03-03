@@ -1,0 +1,35 @@
+* {
+    background-image: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+}
+
+window {
+    background-color: rgba(15, 15, 15, 0.9); /* Очень темный, почти непрозрачный фон */
+}
+
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    margin: 15px;
+    min-width: 150px;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:hover {
+    background-color: #808080; /* Тот самый серый из твоего Waybar */
+    border-color: #000000;
+}
+
+/* Привязка иконок — проверь, чтобы эти файлы существовали */
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }

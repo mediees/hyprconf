@@ -1,0 +1,326 @@
+/* ----------- 💫 https://github.com/JaKooLit 💫 -------- */
+/* swaync colors - wallust from waybar.css */
+
+@import '../../.config/waybar/wallust/colors-waybar.css';
+
+@define-color noti-border-color @color12;
+@define-color noti-bg rgba(255, 255, 255, 0.8);
+@define-color noti-bg-alt @background-alt;
+@define-color noti-bg-hover @background;
+@define-color text-color @foreground;
+
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2e3440; /* Глубокий темный цвет для всего текста */
+}
+
+@define-color text-color #2e3440; /* Явно задаем переменную текста */
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+    opacity: 1;
+    background: @noti-bg;
+    border-radius: 10px
+}
+
+.notification-row {
+    outline: none;
+}
+
+.notification {
+	/*color: @text-color;*/
+    background: @noti-bg;
+    padding: 3px 10px 3px 6px;
+    border-radius: 10px;
+    border: 2px solid @noti-border-color;
+}
+
+.notification-default-action {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.close-button {
+    background: #f7768e;           /* Яркий коралловый/красный цвет */
+    color: white;                  /* Белый крестик */
+    text-shadow: none;
+    padding: 4px;                  /* Немного увеличим область клика */
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: all 0.2s ease;
+}
+
+.close-button:hover {
+    background: #db4b4b;           /* Темно-красный при наведении */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.notification-action {
+    border: 1px solid @noti-border-color;
+    border-top: none;
+    border-radius: 10px;
+}
+
+
+.notification-default-action:hover,
+.notification-action:hover {
+    color: @text-color;
+    background: @noti-bg
+}
+
+
+.notification-default-action {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px
+}
+
+.notification-action:first-child {
+    border-bottom-left-radius: 10px;
+    background: @noti-bg
+}
+
+.notification-action:last-child {
+    border-bottom-right-radius: 10px;
+    background: @noti-bg-alt
+}
+
+.inline-reply {
+    margin-top: 8px
+}
+
+.inline-reply-entry {
+    background: @noti-bg;
+    color: @text-color;
+    caret-color: @text-color;
+    border: 1px solid @noti-border-color;
+    border-radius: 10px
+}
+
+.inline-reply-button {
+	font-size: 0.5rem;
+    margin-left: 4px;
+    background: @noti-bg;
+    border: 1px solid @noti-border-color;
+    border-radius: 10px;
+    color: @text-color
+}
+
+.inline-reply-button:disabled {
+    background: initial;
+    color: @text-color;
+    border: 1px solid transparent
+}
+
+.inline-reply-button:hover {
+    background: @noti-bg-hover
+}
+
+.body-image {
+    margin-top: 6px;
+    color: @text-color;
+    border-radius: 10px
+}
+
+.summary {
+    color: #2e3440;                /* Темный заголовок */
+    font-size: 1.1rem;
+}
+
+.time {
+    color: rgba(0, 0, 0, 0.5);     /* Время сделаем чуть тусклее */
+}
+
+.body {
+    color: #4c566a;                /* Основной текст сообщения — темно-серый */
+}
+
+.control-center {
+    background: @noti-bg;
+    border: 1px solid @noti-border-color;
+	color: @text-color;
+    border-radius: 10px;
+}
+
+.control-center-list {
+    background: transparent
+}
+
+.control-center-list-placeholder {
+    opacity: 0.5
+}
+
+.floating-notifications {
+    background: transparent;
+}
+
+.blank-window {
+    background: alpha(black, 0.1)
+}
+
+.widget-title {
+    color: @text-color;
+    background: @noti-bg-alt;
+    padding: 3px 6px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+/* Кнопка Clear в центре уведомлений */
+.widget-title>button {
+    font-size: 0.8rem;
+    color: #2e3440;                /* Темный текст */
+    background: rgba(0, 0, 0, 0.08); /* Светло-серая подложка */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+.widget-title>button:hover {
+    background: #f7768e;           /* Красный при наведении (как предупреждение) */
+    color: white;                  /* Белый текст при наведении */
+    border: 1px solid #f7768e;
+}
+
+.widget-dnd {
+    background: @noti-bg-alt;
+    padding: 3px 6px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    color: @noti-border-color;
+}
+
+.widget-dnd>switch {
+    border-radius: 10px;
+    border: 1px solid #7aa2f7;
+    background: @noti-border-color;
+}
+
+.widget-dnd>switch:checked {
+    background: #f7768e;
+    border: 1px solid #f7768e;
+}
+
+.widget-dnd>switch slider {
+    background: @noti-bg;
+    border-radius: 10px
+}
+
+.widget-dnd>switch:checked slider {
+    background: @noti-bg;
+    border-radius: 10px
+}
+
+.widget-label {
+    margin: 5px;
+}
+
+.widget-label>label {
+    font-size: 1rem;
+    color: @text-color;
+}
+
+.widget-mpris {
+    color: @text-color;
+    background: @noti-bg;
+    padding: 3px 6px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.widget-mpris > box > button {
+    border-radius: 10px;
+}
+
+.widget-mpris-player {
+    background: rgba(0, 0, 0, 0.05); /* Легкий фон, чтобы выделить на белом */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.widget-mpris-album-art {
+    border-radius: 12px;
+    margin-right: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень, чтобы обложка "ожила" */
+}
+
+.widget-mpris-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2e3440; /* Темный текст для белого фона */
+}
+
+.widget-mpris-subtitle {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6); /* Чуть светлее для исполнителя */
+}
+
+.widget-buttons-grid {
+    background: rgba(0, 0, 0, 0.05); /* Очень легкая тень подложке */
+    padding: 8px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    background: rgba(0, 0, 0, 0.08); /* Светло-серый фон кнопок */
+    color: @color12;                /* Цвет иконок (акцентный из твоей темы) */
+    margin: 4px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Тонкая граница для четкости */
+    transition: all 0.3s ease;      /* Плавная анимация */
+}
+
+/* individual buttons */
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: @color12;           /* При наведении кнопка окрашивается в основной цвет */
+    color: #ffffff;                 /* Иконка становится чисто белой */
+    border: 1px solid @color12;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Легкая тень при наведении */
+}
+
+.widget-menubar>box>.menu-button-bar>button {
+    border: none;
+    background: transparent
+}
+
+.topbar-buttons>button {
+    border: none;
+    background: transparent
+}
+
+/* Ползунки и иконки громкости/яркости */
+.widget-volume, .widget-backlight {
+    background: rgba(0, 0, 0, 0.05);
+    color: #2c3e50;                 /* Глубокий темно-серый для иконок */
+    padding: 10px;
+    margin: 5px 15px;
+    border-radius: 12px;
+}
+
+.widget-volume>box>button {
+    background: transparent;        /* Убираем лишний фон у кнопки звука */
+    color: @color12;
+    font-size: 1.2rem;
+}
+
+.per-app-volume {
+    background-color: @noti-bg;
+    padding: 4px 8px 8px;
+    margin: 0 8px 8px;
+    border-radius: 10px;
+	color: @text-color
+}
