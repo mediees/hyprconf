@@ -1,0 +1,62 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "/home/mediees/.local/share/fastfetch/ascii/arch.txt",
+    "type": "auto",
+    "color": {
+      "1": "white", // Делает основной цвет ASCII белым
+      "2": "white"  // Делает второй цвет (если есть) тоже белым
+    },
+    "padding": {
+      "top": 2,
+      "right": 6
+    }
+  },
+  "display": {
+    "separator": " 󰄾 ",
+    "color": {
+        "keys": "white",
+        "title": "white"
+    },
+    "key": {
+        "width": 12
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{user-name}@{host-name}",
+      "color": {
+        "user": "white",
+        "at": "bright_black",
+        "host": "white"
+      }
+    },
+    {
+      "type": "custom",
+      "format": "──────────────────────────────",
+      "color": "bright_black"
+    },
+    // Система - Белый
+    { "type": "os", "key": "󰣇 System", "keyColor": "white" },
+    { "type": "kernel", "key": " Kernel", "keyColor": "white" },
+    { "type": "packages", "key": "󰏖 Packages", "keyColor": "white" },
+    { "type": "shell", "key": " Shell", "keyColor": "white" },
+    { "type": "terminal", "key": " Terminal", "keyColor": "white" },
+    { "type": "wm", "key": " Window", "keyColor": "white" },
+    "break",
+    // Железо - Серый
+    { "type": "cpu", "key": " CPU", "keyColor": "bright_black" },
+    { "type": "gpu", "key": "󰢮 GPU", "keyColor": "bright_black" },
+    { "type": "memory", "key": "󰍛 Memory", "keyColor": "bright_black" },
+    { "type": "localip", "key": "󰩟 Local IP", "keyColor": "bright_black" },
+    { "type": "battery", "key": "󰁹 Battery", "keyColor": "bright_black" },
+    { "type": "uptime", "key": "󱎫 Uptime", "keyColor": "bright_black" },
+    "break",
+    // Квадраты - Градиент ЧБ
+    {
+      "type": "custom",
+      "format": "\u001b[30m████\u001b[38;5;235m████\u001b[38;5;240m████\u001b[38;5;245m████\u001b[38;5;250m████\u001b[37m████"
+    }
+  ]
+}
