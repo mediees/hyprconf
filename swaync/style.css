@@ -13,10 +13,10 @@
     font-family: "JetBrains Mono Nerd Font";
     font-weight: bold;
     font-size: 1rem;
-    color: #2e3440; /* Глубокий темный цвет для всего текста */
+    color: #2e3440; /* темный цвет для всего текста */
 }
 
-@define-color text-color #2e3440; /* Явно задаем переменную текста */
+@define-color text-color #2e3440;
 
 .control-center .notification-row:focus,
 .control-center .notification-row:hover {
@@ -44,10 +44,10 @@
 }
 
 .close-button {
-    background: #f7768e;           /* Яркий коралловый/красный цвет */
-    color: white;                  /* Белый крестик */
+    background: #f7768e;           
+    color: white;                  
     text-shadow: none;
-    padding: 4px;                  /* Немного увеличим область клика */
+    padding: 4px;                  
     border-radius: 8px;
     margin-top: 5px;
     margin-right: 5px;

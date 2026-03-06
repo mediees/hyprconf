@@ -5,7 +5,7 @@
 }
 
 window {
-    background-color: rgba(15, 15, 15, 0.9); /* Очень темный, почти непрозрачный фон */
+    background-color: rgba(15, 15, 15, 0.9);
 }
 
 button {
@@ -22,11 +22,11 @@ button {
 }
 
 button:hover {
-    background-color: #808080; /* Тот самый серый из твоего Waybar */
+    background-color: #808080;
     border-color: #000000;
 }
 
-/* Привязка иконок — проверь, чтобы эти файлы существовали */
+/* Привязка иконок */
 #lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
 #logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
 #suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }

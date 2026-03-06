@@ -4,8 +4,8 @@
     "source": "/home/mediees/.local/share/fastfetch/ascii/arch.txt",
     "type": "auto",
     "color": {
-      "1": "white", // Делает основной цвет ASCII белым
-      "2": "white"  // Делает второй цвет (если есть) тоже белым
+      "1": "white",
+      "2": "white"
     },
     "padding": {
       "top": 2,
